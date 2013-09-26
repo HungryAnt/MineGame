@@ -1,41 +1,64 @@
-# .gitignore for .NET projects
-# Thanks to Derick Bailey
-# http://www.lostechies.com/blogs/derickbailey/archive/2009/05/18/a-net-c-developer-s-gitignore-file.aspx
-# Additional Thanks to 
-# - Alexey Abramov
- 
-# Standard VS.NET and ReSharper Foo
-obj/
-bin/
-*.csproj.user
-*ReSharper*
-*resharper*
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+#Visual Studio files
+*.[Oo]bj
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
 *.suo
-*.cache
-* Thumbs.db
- 
-# Other useful stuff
-#*.bak
-#*.cache
-#*.log
-#*.swp
-#*.user
-#_compareTemp
-#_notes
-#aspnet_client
-#httpd.parse.errors
- 
-# Office Temp Files
-~$* 
- 
-# If you have a deploy folder
-#deploy
-#deploy/*
- 
-# Exclude ALL DLLs?
-#*.dll
- 
-# SVN Droppings
- 
-*.svn
+*.tlb
+*.tlh
+*.bak
+*.[Cc]ache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.sdf
+*.opensdf
+*.unsuccessfulbuild
+ipch/
+obj/
+[Bb]in
+[Dd]ebug*/
+[Rr]elease*/
+Ankh.NoLoad
+
+#MonoDevelop
+*.pidb
+*.userprefs
+
+#Tooling
+_ReSharper*/
+*.resharper
+[Tt]est[Rr]esult*
+*.sass-cache
+
+#Project files
+[Bb]uild/
+
+#Subversion files
 .svn
+
+# Office Temp Files
+~$*
+
+#NuGet
+packages/
+
+#ncrunch
+*ncrunch*
+*crunch*.local.xml
+
+# visual studio database projects
+*.dbmdl
+
+#Test files
+*.testsettings
